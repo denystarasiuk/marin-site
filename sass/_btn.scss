@@ -1,9 +1,7 @@
 .btn {
-    text-transform: uppercase;
-    border: none;
     background: #2D5E5E;
     border-radius: 10px;
-    padding: 8px 42px;
+    padding: 5px 39px;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
@@ -13,6 +11,16 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 1.33;
+    border: 3px solid transparent;
+    min-width: 250px;
+    &_bordered {
+        border-color: #2D5E5E;
+        background: transparent;
+        &:hover {
+            background: #2D5E5E;
+        }
+    }
+
     &:hover,
     &:focus {
         opacity: .7;
