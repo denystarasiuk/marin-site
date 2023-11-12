@@ -1,0 +1,32 @@
+.statistics {
+    background-image: url(../img/counter-bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fff;
+    &__item {
+        max-width: 300px;
+        text-align: center;
+    }
+    &__title-top {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0 0 14px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33;
+        margin: 0 0 20px;
+    }
+    &__description {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
