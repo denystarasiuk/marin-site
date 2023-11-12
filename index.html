@@ -81,6 +81,32 @@
             </a>
             <img src="./img/about-photo.jpg" alt="" class="about__img">
         </section>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="form center">
+            <h2 class="form__title">
+                Записаться на прием
+            </h2>
+            <div class="form__grid">
+                <input type="text" placeholder="Ваше имя *" class="form__grid-name" required>
+                <input type="tel" placeholder="Ваш телефон *" class="form__grid-tel" required>
+                <label class="form__input-wrap form__input-wrap_select">
+                    <select name="select">
+                        <option value="1">Тема встречи *</option>
+                        <option value="1">Тема встречи *</option>
+                        <option value="1">Тема встречи *</option>
+                    </select>
+                </label>
+                <textarea placeholder="Пожелания" class="form__grid-text"></textarea>
+            </div>
+            <label class="form__checkbox">
+                <input type="checkbox" name="checkbox" value="test checkbox" class="visually-hidden">
+                <span class="form__checkbox-label">
+                    Я согласен с политикой конфиденциальности
+                </span>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+            
+        </form>
     </main>
 
     
