@@ -1,9 +1,48 @@
 .comment {
     padding-top: 60px;
     padding-bottom: 70px;
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__text {
         background-color: #ADDDDE;
         max-width: 600px;
         height: 260px;
+        margin: 0 43px;      
     }
+    &__person {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 32px;
+    }
+    &__customer-pic {
+        display: block;
+        border-radius: 100%;
+    }
+    &__customer-name {
+        color: #2D5E5E;
+        font-size: 18px;
+        font-weight: 500px;
+        line-height: 1.33;
+    }
+    &__customer-text {
+        margin: 0 25px;
+        text-align: center;
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
 }
