@@ -1,0 +1,30 @@
+.articles {
+    background-image: url(../img/newspaper.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 28px;
+    &__title {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 334px 334px 334px;
+        grid-template-rows: auto;
+        gap: 84px;
+        padding-top: 54px;
+    }
+    &__item-title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33;
+        padding-top: 24px;
+    }
+    
+}
