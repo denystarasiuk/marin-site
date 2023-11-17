@@ -13,7 +13,11 @@
         margin: 0;
     }
 
-    input, select, textarea {
+    /*input, select, textarea*/
+    &__grid-name,
+    &__grid-tel,
+    &__grid-text,
+    &__select {
         border: none;
         background: none;
         padding: 8px 20px;

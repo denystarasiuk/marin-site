@@ -90,7 +90,7 @@
                 <input type="text" placeholder="Ваше имя *" class="form__grid-name" required>
                 <input type="tel" placeholder="Ваш телефон *" class="form__grid-tel" required>
                 <label class="form__input-wrap form__input-wrap_select">
-                    <select name="select">
+                    <select name="select" class="form__select">
                         <option value="1">Тема встречи *</option>
                         <option value="1">Тема встречи *</option>
                         <option value="1">Тема встречи *</option>
@@ -197,12 +197,32 @@
             <h2 class="question__title">
                 Частые вопросы
             </h2>
-            <ul class="question__list">
-                <li class="question__item"></li>
-                <li class="question__item"></li>
-                <li class="question__item"></li>
-                <li class="question__item"></li>
-            </ul>
+            <details open class="question__faq">
+                <summary class="question__faq-toggler">
+                    <span class="question__faq-marker"></span>
+                    <span class="question__faq-title">
+                        Какой у вас график работы?
+                    </span>
+                </summary>
+                <p>
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+                </p>
+            </details>
+            <details>
+                <summary>
+                    Сколько длится сессия?  
+                </summary>
+            </details>
+            <details>
+                <summary>
+                    Сколько стоит консультация?  
+                </summary>
+            </details>
+            <details>
+                <summary>
+                    Что из себя представляют консультации?  
+                </summary>
+            </details>
         </section>
     </main>
 
