@@ -1,0 +1,24 @@
+.contact {
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: row-reverse;
+    &__group {
+        width: 477px;
+        height: 344px;
+        background-color: #ADDDDE;
+    }
+    &__title {
+        color: #2D5E5E;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+        padding-top: 29px;
+    }
+
+}
