@@ -4,10 +4,55 @@
     &__title {
         padding: 0;
         margin: 0;
+        padding-bottom: 78px;
         text-align: center;
         color: #000;
         font-size: 48px;
         font-weight: 700;
         line-height: 1.5;
+    }
+}
+
+.faq {
+    padding-left: 60px;
+    max-width: 940px;
+    margin-bottom: 20px;
+    &__toggler {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+    }
+    &__marker {
+        display: block;
+        list-style: none;
+        fill: #000;
+    }
+    &__title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33;
+    }
+    &__content {
+        padding-left: 36px;
+        margin-top: 20px;
+        color: #000;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    &[open] {
+        margin-bottom: 40px;
+        .faq {
+            &__marker {
+                rotate: 45deg;
+                fill: #2D5E5E;
+            }
+           &__title {
+            color: #2D5E5E;
+           } 
+        }
     }
 }
