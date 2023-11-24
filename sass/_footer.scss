@@ -1,0 +1,43 @@
+.footer {
+    background: #2D5E5E;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__networks {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__instagram-title,
+    &__viber-title,
+    &__telegram-title,
+    &__tel-title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__instagram,
+    &__viber,
+    &__telegram,
+    &__tel {
+        width: 18px;
+        height: 18px;
+    }
+
+    &__instagram-text,
+    &__viber-text,
+    &__telegram-text,
+    &__tel-text {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        padding-left: 10px;
+    }
+
+
+}
