@@ -10,13 +10,17 @@
         font-size: 48px;
         font-weight: 700;
         line-height: 1.5;
+        @media screen and (max-width: 1200px) {
+            font-size: 36px;
+            padding-bottom: 40px;
+          }
     }
 }
 
 .faq {
     padding-left: 60px;
     max-width: 940px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     &__toggler {
         display: flex;
         align-items: center;
@@ -33,6 +37,9 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 1.33;
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;
+          }
     }
     &__content {
         padding-left: 36px;
@@ -42,6 +49,9 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+          }
     }
     &[open] {
         margin-bottom: 40px;
@@ -55,4 +65,9 @@
            } 
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 }

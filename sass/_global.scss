@@ -20,6 +20,10 @@ a{
     outline: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -32,4 +36,18 @@ a{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .center{
+        padding-left: calc(50vw - 365px);
+        padding-right: calc(50vw - 365px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .center{
+        padding-left: calc(50vw - 200px);
+        padding-right: calc(50vw - 200px);
+    }
   }

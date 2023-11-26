@@ -9,6 +9,12 @@
         line-height: 1.5;
         margin: 0;
         text-align: center;
+        @media screen and (max-width: 1200px) {
+            font-size: 36px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+        }
     }
 
     &__grid {
@@ -17,6 +23,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 30px;
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding-top: 40px;
+        }
 
         input {
             border: 1px solid #000;

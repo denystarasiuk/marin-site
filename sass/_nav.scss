@@ -3,6 +3,18 @@
         list-style: none;
         display: flex;
         gap: 15px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            padding: 30px;
+        }
     }
     &__link{
         text-decoration: none;
@@ -16,6 +28,24 @@
         &:hover,
         &:focus{
             color: #63cdcf;
+        }
+    }
+    &__open_menu {
+        display: none;
+        @media screen and (max-width: 767px) {
+            display: block;
+            color: #6DE1E3;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        #open_menu:checked {
+            & ~ .nav__list {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

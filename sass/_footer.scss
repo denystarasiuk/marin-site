@@ -5,10 +5,24 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    @media screen and (max-width: 1200px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 100px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 30px;
+    }
 
     &__networks {
         display: flex;
         gap: 30px;
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            gap: 15px;
+        }
     }
 
     &__instagram-title,
@@ -37,6 +51,9 @@
         font-weight: 500;
         line-height: 1.71;
         padding-left: 10px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
     }
 
 

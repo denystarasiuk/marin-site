@@ -13,12 +13,14 @@
             <img src="img/logo.png" alt="logo">
         </a>
         <nav class="nav">
+            <input type="checkbox" id="open_menu" class="visually-hidden">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link nav__link_active" href="#" alt="#">Главная</a></li>
                 <li class="nav__item"><a class="nav__link" href="#" alt="#">Мероприятия</a></li>
                 <li class="nav__item"><a class="nav__link" href="#" alt="#">Контакты</a></li>
                 <li class="nav__item"><a class="nav__link" href="#" alt="#">Блог</a></li>
             </ul>
+            <label for="open_menu" class="nav__open_menu">MENU</label>
         </nav>
     </header>
 
@@ -73,12 +75,14 @@
             <p class="about__desc">
                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
             </p>
-            <button class="btn btn_bordered">
-                Задать вопрос
-            </button>
-            <a href="#" class="btn">
-                Хочу консультацию
-            </a>
+            <div class="about__btns">
+                <button class="btn btn_bordered">
+                    Задать вопрос
+                </button>
+                <a href="#" class="btn">
+                    Хочу консультацию
+                </a>
+            </div>
             <img src="./img/about-photo.jpg" alt="" class="about__img">
         </section>
 

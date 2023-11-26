@@ -5,20 +5,53 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #A5A49F;
     color: #fff;
     &__title {
         max-width: 454px;
         font-size: 48px;
         line-height: 1.5;
         margin: 0 0 55px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 36px;
+            max-width: 360px;
+            margin-bottom: 36px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+            max-width: 300px;
+        }
     }
     &__desc {
         max-width: 325px;
         font-size: 24px;
         line-height: 1.5;
         margin: 0 0 55px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;
+            margin-bottom: 36px;
+            max-width: 250px;
+            // text-wrap: balance;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
     }
     .btn {
         text-transform: uppercase;
     }
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 150px;
+        padding-bottom: 80px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: none;
+      }      
+    
 }

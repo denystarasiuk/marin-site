@@ -7,10 +7,18 @@
     padding-bottom: 128px;
     display: flex;
     flex-direction: row-reverse;
+    @media screen and (max-width: 767px) {
+        padding-top: 280px;
+        padding-bottom: 20px;
+    }
     &__group {
         width: 477px;
         height: 344px;
         background-color: #ADDDDE;
+        @media screen and (max-width: 1200px) {
+            width: 350px;
+            height: 300px;
+        }
     }
     &__title {
         color: #2D5E5E;
@@ -20,6 +28,11 @@
         margin: 0;
         padding-top: 29px;
         padding-left: 30px;
+        @media screen and (max-width: 1200px) {
+            font-size: 36px;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
     }
     &__all {
         padding-top: 19px;
@@ -31,6 +44,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+            padding-left: 15px;
+        }
     }
     &__tel,
     &__viber,
