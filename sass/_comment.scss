@@ -65,3 +65,18 @@
     }
     
 }
+
+
+.slider-slide {
+    display: none;
+}
+
+.slider-slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
