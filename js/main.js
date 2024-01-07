@@ -1,42 +1,31 @@
-function initSlider(sliderSelector) {
-    let slides = document.querySelector(sliderSelector).children
-    let sliderLenght = slides.length
+let commentText = document.querySelectorAll('.comment__text')
+let controls = document.querySelectorAll('.controls')
+let commentTextIndex = 0
 
-    addSlidesClasses(slides)
-    buttons(sliderSelector)
-    changeActiveSlide()
-
+function showSlide(index) {
+    commentText[commentTextIndex].classList.remove('active')
+    commentText[index].classList.add('active')
+    commentTextIndex = index
 }
 
-function addSlidesClasses(slides) {
-    Array.from(slides).forEach((slide) => {
-        slide.classList.add('slider-slide')
+controls.forEach((e) => {
+    e.addEventListener('click', () => {
+        if (event.target.classList.contains('prev')) {
+            let index = commentTextIndex - 1;
+
+            if (index < 0) {
+                index = commentText.length - 1;
+            }
+
+            showSlide(index);
+        } else if (event.target.classList.contains('next')) {
+            let index = commentTextIndex + 1;
+            if (index >= commentText.length) {
+                index = 0;
+            }
+            showSlide(index);
+        }
     })
-    slides[0].classList.add('active')
-}
+})
 
-function buttons(slider) {
-    let prev = document.querySelector('.prev')
-    let next = document.querySelector('.next')
-
-    prev.addEventListener('click', ()=> {changeActiveSlide('prev')})
-    next.addEventListener('click', ()=> {changeActiveSlide('next')})
-}
-
-function changeActiveSlide(direction) {
-    if(direction === 'prev') {
-        console.log('попередній слайд')
-    } else if(direction === 'next') {
-        console.log(slider.querySelectorAll('.slider-slide'))
-    } else {
-        console.error('не вибрано напрямок')
-    }
-    //Array.from(slider.querySelectorAll('.slider-slide')).forEach(slide, index) => {
-      //  if(slide.classList.contains('active')) {
-        //    console.log(slide, index)
-          //  slide.classList.remove('active')
-        //}
-    //}
-}
-
-initSlider('.slider')
+showSlide(commentTextIndex);

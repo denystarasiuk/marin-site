@@ -18,25 +18,45 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        overflow: hidden;
     }
 
-    &__left-arrow_pic,
-    &__right-arrow_pic {
-        width: 17px;
-        height: 30px;
+    &__area {
+        max-width: 600px;
+        width: 100%;
+        min-height: 260px;
+        overflow: hidden;
+        @media screen and (max-width: 1280px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__text {
+        display: none;
+        overflow: hidden;
         background-color: #ADDDDE;
         max-width: 600px;
         height: 260px;
-        margin: 0 43px;
+        margin: 0;
         @media screen and (max-width: 767px) {
             max-width: 325px;
             height: 100%;
             margin: 0 10px;
         }      
     }
+
+    &__text.active {
+        display: block;
+    }
+
     &__person {
         padding-top: 20px;
         padding-bottom: 30px;
@@ -47,6 +67,8 @@
     }
     &__customer-pic {
         display: block;
+        width: 70px;
+        height: 70px;
         border-radius: 100%;
     }
     &__customer-name {
@@ -66,14 +88,29 @@
     
 }
 
+.controlsBtn {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    @media screen and (max-width: 1280px) {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 
-.slider-slide {
-    display: none;
+    }
 }
 
-.slider-slide.active {
-    display: block;
-}
+.left-arrow_pic,
+    .right-arrow_pic {
+        width: 17px;
+        height: 30px;
+    }
 
 .prev, .next {
     cursor: pointer;
