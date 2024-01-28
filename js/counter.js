@@ -9,18 +9,20 @@ document.addEventListener('scroll', () => {
             let count = 0
 
             function updateCount() {
-                let target = parseInt(statistics__item.dataset.value)
-                if(count < target) {
+                let temp = parseInt(statistics__item.dataset.value)
+                if(count < temp) {
                     count++
                     statistics__item.innerText = count
-                    setTimeout(updateCount, 2000 / target)
+                    setTimeout(updateCount, 2000 / temp)
                 } else {
-                    statistics__item.innerText = target
+                    statistics__item.innerText = temp
                 }
             }
+
             updateCount()
             isAnimated = true
         })
+        
     } else if(scrollY < container.offsetTop - container.offsetHeight - 500 || scrollY === 0 && isAnimated === true) {
         counterNumber.forEach(statistics__item => {
             statistics__item.innerText = 0
@@ -28,3 +30,5 @@ document.addEventListener('scroll', () => {
         isAnimated = false
     }
 })
+
+
